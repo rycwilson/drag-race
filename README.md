@@ -11,15 +11,19 @@ Build an in-browser game that will let a player race their awesome dragster on a
 * If the player attempts to drive the car before the light is green, a false start should be indicated
 * If the light is green, the player should be able to race their dragster down the racetrack
 * Use HTML, CSS, some images from google, and JS to build the game
-
+ 
 ## Bonuses
 
 * Calculate the drag race time
 * Restart the race keeping previous race times in a table
+* Save the drag race time and show the fastest drag race time
 
 ## Super-bonus
 
 * Two-player drag race (use different parts of the keyboard to let two players control the game)
+* Add an AI that races against you 
+* Give the AI different difficulty levels (easy, medium, hard) where each level is a different speed
+* Add a cheat code (http://en.wikipedia.org/wiki/Konami_Code) which automatically lets you win the race. 
 
 ## Super-duper bonus
 
