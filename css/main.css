@@ -12,10 +12,13 @@
   margin: 20px auto;
   width: 70px;
   background: black;
+  color: white;
+  text-align: center;
+  font-size: 0.9em;
 }
 
 .lights {
-  text-align: center;
+  border-bottom: 1px solid #ccc;
 }
 
 .lights div {
