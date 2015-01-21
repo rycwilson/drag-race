@@ -1,0 +1,79 @@
+/******* GENERAL ******/
+.center {
+  margin: 0 auto;
+}
+
+.abs {
+  position: absolute;
+}
+
+/******* XMAS TREE ******/
+#christmas-tree {
+  margin: 20px auto;
+  width: 70px;
+  background: black;
+}
+
+.lights {
+  text-align: center;
+}
+
+.lights div {
+  display: inline-block;
+  background: white;
+}
+
+#pre-stage div, #stage div {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+#start-lights div {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+/******* RACETRACK ******/
+#racetrack {
+  background: green;
+  width: 90%;
+  height: 88px;
+  border: 2px solid black;
+}
+
+#strip {
+  width: inherit;
+  height: 88px;
+}
+
+.place {
+  height: 88px;
+  width: 10px;
+  min-height: 88px;
+  min-width: 10px;
+}
+
+#pre-staged {
+  left: 39px;
+  background: yellow;
+}
+
+#finish {
+  right: 49px;
+  background: white;
+}
+
+#staged {
+  left: 93px;
+  background: yellow;
+}
+
+#dragster {
+  background: url(../images/mario.png) no-repeat;
+  background-size: 39px 44px;
+  width: 39px;
+  height: 44px;
+  top: 20px;
+}
