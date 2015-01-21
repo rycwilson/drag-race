@@ -25,6 +25,9 @@ Build an in-browser game that will let a player race their awesome dragster on a
 * Give the AI different difficulty levels (easy, medium, hard) where each level is a different speed
 * Add a cheat code (http://en.wikipedia.org/wiki/Konami_Code) which automatically lets you win the race. 
 
-## Super-duper bonus
+## Super-duper-uber bonus
 
-* Show the velocity of the vehicle as it's moving (think about how you'd calculate velocity as a function of mass and acceleration)
+* Turn the drag race into a race track!
+ * Implement a way to draw an arbitrary race track, defined via a two-dimensional array, with coordinates in the cartesian plane
+ * The two-dimensional array should be represented on screen by having the race-track be drawn based on it
+ * The AI should be able to navigate the race track, and your car should only be able to move along the race track
