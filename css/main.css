@@ -84,4 +84,5 @@
   width: 39px;
   height: 44px;
   top: 20px;
+  z-index: 100;
 }
