@@ -6,10 +6,10 @@
     // reset the christmas tree every time it's initialized
     this.reset();
   },
-  RaceTrack     = function() {
+  RaceTrack         = function() {
     // this class manages the race track
   },
-  Game          = function() {
+  Game              = function() {
     // this class manages game state
     // initialize a christmas tree
     this.tree = new ChristmasTree();
