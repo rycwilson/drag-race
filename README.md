@@ -4,12 +4,23 @@ Build an in-browser game that will let a player race their awesome dragster on a
 
 ## What should it do?
 
-* When the game starts, the dragstrip's starting light should be red
+* When the game starts, the car should be in the pre-staging area and
+  the first set of yellow lights should be on (pre-stage)
 * The game should start with a dragster that has its engine off at the dragstrip
 * The player should be able to start the engine with one of the keyboard keys
-* 5-10 Seconds after the player has started their engine, the dragstrip's light should switch automatically from red, to yellow, to green. The time between the lights switching is up to you.
-* If the player attempts to drive the car before the light is green, a false start should be indicated
+* After starting the engine, the player can move the dragster into the
+  staging area, crossing the pre-staging line
+* Once the dragster is in the staging area, the "stage" light should
+  turn on
+* At this point, the next 3 sets of light should turn on, with 0.5
+  seconds between each set
+* The second to last set is the set of green lights, which should
+  indicate the start of the race
+* If the player attempts to drive the car before the green lights are
+  turned on, the last set of lights should be lit in red, and the race
+is over
 * If the light is green, the player should be able to race their dragster down the racetrack
+* Crossing the finish line is the end of the race
 * Use HTML, CSS, some images from google, and JS to build the game
  
 ## Bonuses
