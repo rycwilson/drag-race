@@ -11,6 +11,8 @@
   },
   Dragster          = function() {
     // grab the car element
+    // $ is convention to indicate we're talking about HTML element
+    //   syntactically, not special
     this.$el = document.getElementById('dragster');
     // set the starting position of the dragster
     this.$el.style.left = "0px";
@@ -34,6 +36,8 @@
   };
 
   Game.prototype.attachListeners = function() {
+    // this is so event listeners can call prototype
+    // functions of the game object
     var self = this;
     // listen for user input, specifically
     // for the user pressing the right arrow key
@@ -46,6 +50,7 @@
 
   Dragster.prototype.advance = function() {
     // this should move the car across the screen 1px at a time
+    // $el references an HTML element (see Dragster prototype)
     this.$el.style.left = parseInt(this.$el.style.left, 10) + 1 + "px";
   };
 
