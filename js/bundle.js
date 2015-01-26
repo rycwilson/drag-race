@@ -47,7 +47,6 @@ Game.prototype.attachListeners = function() {
       }
     }
     else if (event.keyCode === 39) {
-      console.log(self.$mesg.innerHTML);
       self.$mesg.style.backgroundColor = "red";
       self.$mesg.innerHTML = "Type 's' to start engine!";
     }
