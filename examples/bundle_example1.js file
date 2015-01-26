@@ -1,0 +1,48 @@
+/*
+Questions:
+1 - Line 1 - Why the opening parend and why anonymous?  Why () at end?
+-> Opening and closing parentheses tells JS to evaluate expression between, i.e. the function.
+-> Parentheses at the end indicate that the function is called as soon as the page loads
+-> "Immediately invoked function expression"
+-> So we're evaluating and the calling the function
+-> Why are we doing this?  To stay out of global scope
+
+2 - Can we reference the left property of dragster with a variable?
+-> Only used once; don't need to.  Might do that if it were used more than once, or for clarity.  Temporary variables generally not very good; try replacing with functions.
+
+3 - Can we use setAttribute to change the value of class?
+-> yes
+
+Improvements:
+1 - Organization of code into objects
+-> OOP!  Avoid "procedural code", i.e. code with no organization, just procedure after procedure
+-> But don't jump to objects too quickly
+
+2 - Isolation of responsibility
+
+3 - Less "wordiness" -> convey intent better
+- Helper function for grabbing an element by ID
+*/
+
+(function() {
+  // get a reference to the pre stage lights html element
+  var $christmasTreePreStageLights = document.getElementById('pre-stage');
+  // grab the car element
+  var $dragsterEl = document.getElementById('dragster');
+
+  // set the starting position of the dragster
+  $dragsterEl.style.left = "0px";
+
+  // append the css on class to the pre stage lights
+  // so that they show up as yellow
+  $christmasTreePreStageLights.className += " on";
+
+  // listen for user input, specifically
+  // for the user pressing the right arrow key
+  window.addEventListener('keyup', function(event) {
+    if (event.keyCode === 39) {
+      // this should move the car across the screen 1px at a time
+      $dragsterEl.style.left = parseInt($dragsterEl.style.left, 10) + 1 + "px";
+    }
+  });
+})();

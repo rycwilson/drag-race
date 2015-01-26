@@ -1,49 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Drag Race!</title>
-  <link rel="stylesheet" href="css/normalize.css" media="all">
-  <link rel="stylesheet" href="css/main.css" media="all">
-</head>
-<body>
-  <div id="christmas-tree" class="center">
-    pre-stage
-    <div id="pre-stage" class="lights">
-      <div></div><div></div>
-      <div></div><div></div>
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+  <div id="xmas_tree">
+    <div id="prestage_lights_frame">
+      <p class="xmas_tree_text">pre-stage</p>
+      <div class="prestage_lights0_on"></div>
+      <div class="prestage_lights1_on"></div>
+      <div class="prestage_lights2_on"></div>
+      <div class="prestage_lights3_on"></div>
     </div>
-    stage
-    <div id="stage" class="lights">
-      <div></div><div></div>
-      <div></div><div></div>
+    <div id="stage_lights_frame">
+      <p class = "xmas_tree_text">stage</p>
+      <div class="stage_lights0_off"></div>
+      <div class="stage_lights1_off"></div>
+      <div class="stage_lights2_off"></div>
+      <div class="stage_lights3_off"></div>
     </div>
-    <div id="start-lights" class="lights">
-      <div></div><div></div>
+    <div id="start_lights0_frame">
+      <div class="start_lights0_0_off"></div>
+      <div class="start_lights0_1_off"></div>
     </div>
-    <div id="start-lights" class="lights">
-      <div></div><div></div>
+    <div id="start_lights1_frame">
+      <div class="start_lights1_0_off"></div>
+      <div class="start_lights1_1_off"></div>
     </div>
-    <div id="start-lights" class="lights">
-      <div></div><div></div>
+    <div id="start_lights2_frame">
+      <div class="start_lights2_0_off"></div>
+      <div class="start_lights2_1_off"></div>
     </div>
-    <div id="start-lights" class="lights">
-      <div></div><div></div>
+    <div id="go_lights_frame">
+      <div class="go_lights0_off"></div>
+      <div class="go_lights1_off"></div>
     </div>
-    <div id="start-lights" class="lights">
-      <div></div><div></div>
-    </div>
-    </div>
-  </div>
-  <div id="racetrack" class="center">
-    <div class="abs" id="strip">
-      <div id="dragster" class="abs"></div>
-      <div id="pre-staged" class="place abs"></div>
-      <div id="staged" class="place abs"></div>
-      <div id="start" class="abs"></div>
-      <div id="finish" class="place abs"></div>
+    <div id="disq_lights_frame">
+      <div class="disq_lights0_off"></div>
+      <div class="disq_lights1_off"></div>
     </div>
   </div>
-  <script src="js/bundle.js"></script>
-</body>
+  <div id="racetrack">
+    <img id="racer" src="images/mario.png" style="left: 0px" alt="">
+    <!-- <div id="box">test</div> -->
+    <div id="stage" style="left: 60px">
+    </div>
+    <div id="start" style="left: 140px">
+    </div>
+    <div id="finish" style="left: 720px">
+    </div>
+  </div>
+  <div id="mesg">Message</div>
+  </body>
+  <script type="text/javascript" src="js/bundle.js"></script>
 </html>
